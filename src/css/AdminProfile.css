@@ -1,0 +1,18 @@
+/* AdminProfile.css */
+.admin-profile-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    height: calc(100vh - 50px); /* Adjust the 50px if your navbar height is different */
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Add further styling to make it look nice */
+  }
+  

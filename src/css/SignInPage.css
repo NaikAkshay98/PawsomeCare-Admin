@@ -1,0 +1,18 @@
+/* SignInPage.css */
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Style your form container if necessary */
+.signin-form {
+  flex: 1; /* Allows form to grow and take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the form on the page */
+  align-items: center; /* Center items horizontally */
+  padding: 1rem;
+}
+
+/* Assuming you have some styling for your footer that might look like this */

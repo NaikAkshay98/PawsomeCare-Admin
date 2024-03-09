@@ -1,0 +1,64 @@
+/* AdminEmailSupport.css */
+.admin-email-support-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+  }
+  
+  .cases-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .case {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .case-id {
+    font-weight: bold;
+  }
+  
+  .status-button {
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    /* Differentiate status colors */
+  }
+  
+  .status-button.open {
+    background-color: #ffc107; /* Orange for open cases */
+    color: white;
+  }
+  
+  .status-button.closed {
+    background-color: #dc3545; /* Red for closed cases */
+    color: white;
+  }
+  
+  .status-button.solved {
+    background-color: #28a745; /* Green for solved cases */
+    color: white;
+  }

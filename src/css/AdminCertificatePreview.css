@@ -1,0 +1,17 @@
+/* CertificatePreview.css */
+.certificate-preview {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    background: #fff;
+    /* Add more styles to match the certificate's design from the image */
+  }
+  
+  .certificate-actions button {
+    margin: 10px;
+    padding: 5px 15px;
+    /* Style your buttons */
+  }
+  

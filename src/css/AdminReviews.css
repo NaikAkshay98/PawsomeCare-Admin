@@ -1,0 +1,40 @@
+/* AdminReviews.css */
+.admin-reviews-container {
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+  }
+  
+  .caretakers-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .caretaker {
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .open-reviews-button {
+    padding: 5px 10px;
+    background-color: #ffc107; /* Or any color that matches the 'Open Reviews' button */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

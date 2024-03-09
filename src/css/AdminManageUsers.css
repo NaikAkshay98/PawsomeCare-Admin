@@ -1,0 +1,68 @@
+/* AdminManageUsers.css */
+.admin-manage-users {
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Use a standard font for now */
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    padding: 10px;
+    width: calc(100% - 100px); /* Leave space for the search button */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .user-management {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .user-management button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style buttons based on the status */
+  .user-management button.modify {
+    background-color: #ffc107; /* Bootstrap warning color */
+    color: white;
+  }
+  
+  .user-management button.activate {
+    background-color: #28a745; /* Bootstrap success color */
+    color: white;
+  }
+  
+  .user-management button.deactivate {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+  }
+  
+  /* Disable buttons based on user status */
+  .user-management button[disabled] {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  

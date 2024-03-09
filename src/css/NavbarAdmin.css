@@ -1,0 +1,30 @@
+.admin-navbar {
+    background-color: #333; /* Or whatever color you prefer */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .admin-nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust the space between nav items */
+  }
+  
+  .admin-nav-item .admin-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-nav-item .admin-nav-link:hover {
+    background-color: #555; /* Color when hovered */
+  }
+  
+  .admin.admin-nav-item .admin-nav-link {
+    background-color: #f00; /* Different background color for admin link */
+  }
+  

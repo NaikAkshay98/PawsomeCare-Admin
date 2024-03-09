@@ -1,0 +1,8 @@
+.admin-home-content {
+    padding: 20px; /* Add padding as needed */
+    min-height: calc(100vh - 50px - 50px); /* Adjust based on navbar and footer height */
+    /* Style your content as needed */
+  }
+  
+  /* Add other styles for your admin home page here */
+  
