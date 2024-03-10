@@ -13,9 +13,9 @@ function SignInPage() {
     event.preventDefault(); // Prevent default form submission behavior
 
     // Replace 'fakeUser' and 'fakePassword' with your fake credentials
-    if (username === '1' && password === '1') {
+    if (username === 'a' && password === 'a') {
       navigate('/admin'); // Redirect to AdminHomePage
-    } else if(username === '2' && password === '2'){
+    } else if(username === 'u' && password === 'u'){
       navigate('/user');
     }else {
       // Handle incorrect credentials
