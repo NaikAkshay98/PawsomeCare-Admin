@@ -1,0 +1,43 @@
+.support-form-container {
+    background: linear-gradient(to top, rgb(86, 56, 56), rgb(248, 206, 204));
+    padding: 20px;
+    width: fit-content; /* Or set a specific width */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: for a subtle shadow */
+    margin: auto; /* Center the form in the container */
+  }
+  
+  .support-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .support-form label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Make label text bold */
+  }
+  
+  .support-form input,
+  .support-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners for input and textarea */
+  }
+  
+  .submit-button {
+    background-color: #000; /* Black background for the button */
+    color: #fff; /* White text for the button */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #444; /* Darker background on hover */
+  }
+  

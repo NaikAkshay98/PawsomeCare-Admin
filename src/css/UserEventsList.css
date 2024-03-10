@@ -1,0 +1,33 @@
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .event-card {
+    width: 200px; /* or any other fixed width */
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: for a shadow effect */
+    transition: transform 0.2s; /* Optional: for a hover effect */
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05); /* Optional: for a hover effect */
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px; /* Match the card's border radius */
+    border-top-right-radius: 10px; /* Match the card's border radius */
+  }
+  
+  .event-title {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    margin: 0;
+    border-bottom-left-radius: 10px; /* Match the card's border radius */
+    border-bottom-right-radius: 10px; /* Match the card's border radius */
+  }

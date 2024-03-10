@@ -1,0 +1,72 @@
+.appointments-page {
+    display: flex;
+    flex-direction: column;
+    /* Style as needed */
+  }
+  
+  .appointment {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Additional styles */
+  }
+  
+  .appointment.pending {
+    border-left: 4px solid yellow; /* or any other color for pending */
+  }
+  
+  .appointment.accepted {
+    border-left: 4px solid green; /* or any other color for accepted */
+  }
+  
+  .appointment.declined {
+    border-left: 4px solid red; /* or any other color for declined */
+  }
+  
+  .appointment-name,
+  .appointment-status,
+  .appointment-expires,
+  .appointment-date {
+    margin-right: 10px;
+    /* Additional styles */
+  }
+  
+  .preview-request {
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Additional styles */
+  }
+  
+  .preview-request:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* ... (your existing styles) */
+
+.filter-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: transparent; /* Adjust based on your design */
+    border: 2px solid #ddd; /* Slightly visible border */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button:hover {
+    border-color: #ccc; /* Darker border on hover */
+  }
+  
+  /* Add active class styling for the filter buttons */
+  .filter-buttons .active {
+    background-color: #f0f0f0; /* Light grey background for active button */
+    border-color: #bbb; /* Darker border for active button */
+  }
+  

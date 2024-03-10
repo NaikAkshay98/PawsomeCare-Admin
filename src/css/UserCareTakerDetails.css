@@ -1,0 +1,61 @@
+.caretaker-detail-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .caretaker-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .caretaker-info {
+    padding: 15px;
+  }
+  
+  .caretaker-name {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .caretaker-rating {
+    color: gold;
+    margin-bottom: 10px;
+  }
+  
+  .caretaker-bio {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .caretaker-rate {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .button.book-appointment {
+    padding: 10px 15px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button.book-appointment:hover {
+    background-color: #007B9A;
+  }
+  
+  .caretaker-not-found {
+    text-align: center;
+    padding: 20px;
+  }
+  

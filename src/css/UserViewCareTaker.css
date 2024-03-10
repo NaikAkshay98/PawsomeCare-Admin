@@ -1,0 +1,62 @@
+.caretaker-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .caretaker-card {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .caretaker-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .caretaker-name {
+    margin: 10px;
+  }
+  
+  .caretaker-rating {
+    margin: 10px;
+    color: #ffd700; /* gold color for the stars */
+  }
+  
+  .caretaker-bio {
+    margin: 10px;
+    height: 60px; /* fixed height for uniformity */
+    overflow: hidden; /* hides overflow */
+  }
+  
+  .caretaker-rate {
+    margin: 10px;
+    font-weight: bold;
+    color: #4CAF50; /* some color for the rate */
+  }
+  
+  /* ... (existing styles) */
+
+.read-more-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 8px;
+    background-color: #f8f8f8; /* Light gray, you can choose your own color */
+    color: #000; /* Text color */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .read-more-button:hover {
+    background-color: #e2e2e2; /* Slightly darker on hover */
+    text-decoration: none; /* Ensure underline does not re-appear on hover */
+  }
+  

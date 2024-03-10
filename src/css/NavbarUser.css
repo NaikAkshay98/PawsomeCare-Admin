@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #222; /* Dark gray background, equivalent to RGB(34, 34, 34) */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .nav-item {
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Set font to Comic Sans MS */
+  }
+  
+  .nav-item:hover,
+  .active {
+    border-bottom: 2px solid #fff; /* White bottom border for active/hover state */
+  }
+  
+  .nav-item-right {
+    color: #fff; /* White text */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Set font to Comic Sans MS */
+    /* Additional styling to align the 'Dog Owner A' to the right */
+  }
+  

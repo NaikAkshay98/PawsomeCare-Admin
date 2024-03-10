@@ -15,11 +15,18 @@ function SignInPage() {
     // Replace 'fakeUser' and 'fakePassword' with your fake credentials
     if (username === '1' && password === '1') {
       navigate('/admin'); // Redirect to AdminHomePage
-    } else {
+    } else if(username === '2' && password === '2'){
+      navigate('/user');
+    }else {
       // Handle incorrect credentials
       alert('Incorrect username or password');
     }
   };
+
+  const handleForgotPassword = () => {
+    navigate('/forgotpassword'); // This should be the route to your forgot password page
+  };
+
 
   return (
     <div className="signin-container">
@@ -45,8 +52,8 @@ function SignInPage() {
           <button type="submit" className="signin-button">SIGN IN</button>
         </div>
         <div className="signin-footer">
-          <a href="/forgot-password">Forgot Password?</a>
-          <a href="/sign-up">SIGN UP</a>
+          <button type="button" onClick={handleForgotPassword}>Forgot Password?</button>
+          <button type="button" onClick={() => navigate('/sign-up')}>SIGN UP</button>
         </div>
       </form>
       <Footer />
