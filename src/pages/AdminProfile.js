@@ -10,7 +10,7 @@ const AdminProfile = () => {
     // Perform any logout logic here, like clearing tokens or state
 
     // Redirect to the admin login page
-    navigate('/adminlogin');
+    navigate('/');
   };
 
   return (

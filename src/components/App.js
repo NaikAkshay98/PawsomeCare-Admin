@@ -15,7 +15,7 @@ import AdminEventsDetails from '../pages/AdminEventsDetails';
 import '../css/App.css';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [setIsLoggedIn] = useState(false);
 
 
   return (
@@ -24,7 +24,7 @@ function App() {
         
         <div className="content">
           <Routes>
-            <Route path="/adminlogin" element={<SignInPage setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/" element={<SignInPage setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/admin" element={<AdminHomePage />}>
               {/*<Route index element={<h2>Welcome to the Admin Dashboard</h2>} />*/}
               <Route path="adminprofile" element={<AdminProfile />} />
