@@ -17,6 +17,8 @@ function SignInPage() {
       navigate('/admin'); // Redirect to AdminHomePage
     } else if(username === 'u' && password === 'u'){
       navigate('/user');
+    } else if(username === 'c' && password === 'c'){
+      navigate('/caretaker');
     }else {
       // Handle incorrect credentials
       alert('Incorrect username or password');
@@ -33,6 +35,17 @@ function SignInPage() {
       <NavbarLogin />
       <form onSubmit={handleLogin} className="signin-form">
         <div className="form-inner">
+          <p>Admin:
+            Username: a Password: a
+          </p>
+          <p>
+            User:
+            Username: u Password: u
+          </p>
+          <p>
+            Caretaker:
+            Username: c Password: c
+          </p>
           <label htmlFor="username">User Name:</label>
           <input
             type="text"
@@ -53,7 +66,7 @@ function SignInPage() {
         </div>
         <div className="signin-footer">
           <button type="button" onClick={handleForgotPassword}>Forgot Password?</button>
-          <button type="button" onClick={() => navigate('/sign-up')}>SIGN UP</button>
+          <button type="button" onClick={() => navigate('/registration')}>SIGN UP</button>
         </div>
       </form>
       <Footer />

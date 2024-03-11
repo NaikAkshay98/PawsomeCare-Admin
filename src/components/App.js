@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import HomePage from '../pages/HomePage';
+import HomePage from '../pages/HomePage'; 
+import AboutUs from '../pages/AboutUs';
 import AdminHomePage from '../pages/AdminHomePage';
 import SignInPage from '../pages/SignInPage';
 import ForgotPassword from '../pages/ForgotPassword';
+import Registration from '../pages/Registration';
+
+import CTHomePage from '../pages/CTHomePage';
+import CTAppointmentRequests from '../pages/CTAppointmentRequests';
+import CTSchedule from '../pages/CTSchedule';
+import CTProfile from '../pages/CTProfile';
+
 import AdminProfile from '../pages/AdminProfile';
 import AdminEmailSupport from '../pages/AdminEmailSupport';
 import AdminVerifyCT from '../pages/AdminVerifyCT';
@@ -36,8 +44,18 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/aboutuspage" element={<AboutUs />} />
             <Route path="/login" element={<SignInPage setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/forgotpassword" element={<ForgotPassword />} />
+            <Route path="/registration" element={<Registration />} />
+
+            <Route path="/caretaker" element={<CTHomePage />}>
+              <Route path="appointment-request" element={<CTAppointmentRequests />} />
+              <Route path="support" element={<Support />} />
+              <Route path="schedule" element={<CTSchedule />} />
+              <Route path="profile" element={<CTProfile />} />
+            </Route>
+
             <Route path="/admin" element={<AdminHomePage />}>
               {/*<Route index element={<h2>Welcome to the Admin Dashboard</h2>} />*/}
               <Route path="adminprofile" element={<AdminProfile />} />

@@ -6,15 +6,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="nav-logo">Pawsome Care</Link>
-      <div className="nav-items">
-        <Link to="/caretakers" className="nav-item">View Caretakers</Link>
-        <Link to="/events" className="nav-item">Events</Link>
-        <Link to="/support" className="nav-item">Support</Link>
-        <Link to="/appointments" className="nav-item">View Appointments</Link>
-      </div>
-      <div className="nav-actions">
-        <Link to="/login" className="nav-action">SIGN IN/SIGN UP</Link>
-      </div>
+
+      <Link to='/aboutuspage' key="Aboutus">AboutUs</Link>
+      <Link to="/login" >SIGN IN/SIGN UP</Link>
+
+      
     </nav>
   );
 };

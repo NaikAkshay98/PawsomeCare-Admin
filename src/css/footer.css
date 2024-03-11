@@ -1,10 +1,58 @@
-/* Footer.css */
-.footer {
-  background-color: #333;
-  color: white;
+footer {
+  background: linear-gradient(to top, rgb(86, 56, 56), rgb(248, 206, 204));
+  color: #000000;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 0%;
+}
+
+.site-footer {
+  background:linear-gradient(to top, rgb(86, 56, 56), rgb(248, 206, 204));;
+  color: #333;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-container div,
+.footer-bottom {
   text-align: center;
-  padding: 10px;
-  position: relative; /* changed from absolute to relative */
-  bottom: 0;
-  width: 98.5%;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+  color: #007bff;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
 }

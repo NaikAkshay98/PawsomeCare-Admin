@@ -1,0 +1,123 @@
+/* styles.css */
+
+/* Main container styles */
+.register-container {
+    max-width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(184, 121, 196, 0.5);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Box shadow for a subtle 3D effect */
+    text-align: center;
+    margin-top: 13%;
+    margin-bottom: 8%;
+  }
+  
+  /* Title styles */
+  .register-title {
+    font-size: 24px;
+    color: #333333; /* Dark grey color */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  /* Button styles */
+  .register-button {
+    background-color: #ececec; /* Light grey background */
+    color: #333333; /* Text color */
+    padding: 10px 20px;
+    margin: 10px 0; /* Space above and below the button */
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    display: block; /* Make buttons block level to fill container width */
+    width: calc(100% - 40px); /* Full width minus padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: background-color 0.3s ease; /* Transition for button hover effect */
+  }
+  
+  .register-button:hover {
+    background-color: #dcdcdc; /* Slightly darker grey on hover */
+  }
+  
+  /* Separator styles */
+  .separator {
+    font-size: 16px;
+    color: #333333; /* Text color */
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .separator:after,
+  .separator:before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 40%;
+    background: #d1d1d1; /* Light grey color */
+    position: absolute;
+    top: 50%;
+  }
+  
+  .separator:before {
+    left: 0;
+  }
+  
+  .separator:after {
+    right: 0;
+  }
+  
+  .separator-text {
+    display: inline-block;
+    background: #ffffff; /* White background to cover lines */
+    padding: 0 10px;
+    position: relative;
+    z-index: 1; /* Above the pseudo-elements */
+  }
+  
+
+
+/*.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(184, 121, 196, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .modal-button {
+    background-color: rgb(86, 56, 56);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .separator {
+    font-size: 18px;
+    color: #999;
+    margin: 20px 0;
+  }
+  */

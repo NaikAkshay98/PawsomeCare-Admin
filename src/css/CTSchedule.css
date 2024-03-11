@@ -1,0 +1,37 @@
+/* ScheduleComponent.css */
+.schedule-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .calendar-container {
+    width: 50%;
+    /* Adjust styles as needed */
+  }
+  
+  .add-update-schedule-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .appointments-container {
+    width: 50%;
+    /* Adjust styles as needed */
+  }
+  
+  .appointment-card {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 4px;
+    /* Adjust styles as needed */
+  }
+  
+  /* Add responsive styles if needed */
+  

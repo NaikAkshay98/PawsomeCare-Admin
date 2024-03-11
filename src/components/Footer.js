@@ -3,18 +3,33 @@ import '../css/footer.css';
 
 function Footer() {
     return (
-        <footer className="footer">
-            <div className="footer-content">
-                <p>About us</p>
-                <p>"Pawsome Care" is an innovative web platform dedicated to enhancing the lives of dog owners and their cherished pets. Founded by a team of pet enthusiasts, our mission is to provide a one-stop solution for all dog care needs, including grooming, walking, and veterinary services. With a focus on reliability, safety, and community, "Pawsome Care" connects dog owners with trusted caretakers, ensuring peace of mind and the highest standard of care for their furry friends. Join us in creating a happier, healthier world for dogs everywhere.</p>
-                <div className="footer-links">
-                    {/* Add navigation links */}
-                </div>
-                <div className="social-media-icons">
-                    {/* Add social media icons */}
-                </div>
-            </div>
-        </footer>
+        <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy; 2024 Company Name. All Rights Reserved.</p>
+    </div>
+</footer>
+
     );
 }
 

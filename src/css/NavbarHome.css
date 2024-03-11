@@ -1,45 +1,18 @@
-/* Navbar.css */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333; /* Or any dark color that matches the navbar */
-    color: white;
-    padding: 0 20px;
-  }
-  
-  .nav-logo {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .nav-items {
-    display: flex;
-  }
-  
-  .nav-item {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 5px;
-  }
-  
-  .nav-item:hover {
-    background-color: #555; /* A lighter shade for hover state */
-  }
-  
-  .nav-actions .nav-action {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin-left: 10px;
-    border: 1px solid white; /* Border to make it stand out */
-  }
-  
-  .nav-actions .nav-action:hover {
-    background-color: #f8f9fa;
-    color: #333;
-    border-color: #f8f9fa;
-  }
-  
+.navigation {
+  display: flex;
+  align-items: center; /* Changed from flex-end */
+  color: #F4976C;
+}
+
+.navigation a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  background-color: pink;
+  border-radius: 4px;
+}
