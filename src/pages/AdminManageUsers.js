@@ -4,10 +4,10 @@ import '../css/AdminManageUsers.css'; // Ensure you have the corresponding CSS f
 const AdminManageUsers = () => {
   const [users, setUsers] = useState([
     { id: '558833', status: 'Active' },
-  { id: '558834', status: 'Inactive' },
-  { id: '558835', status: 'Active' },
-  { id: '558836', status: 'Inactive' },
-  // ... more users
+    { id: '558834', status: 'Inactive' },
+    { id: '558835', status: 'Active' },
+    { id: '558836', status: 'Inactive' },
+    // ... more users
   ]);
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -51,22 +51,21 @@ const AdminManageUsers = () => {
       <div className="search-container">
         <input
           type="text"
-          placeholder="Search User"
+          placeholder="Search User by ID"
           value={searchTerm}
           onChange={handleSearchChange}
+          className="search-input" // Added class for input
         />
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearch} className="search-button">Search</button> {/* Added class for button */}
       </div>
       {users.map((user) => (
         <div key={user.id} className="user-management">
-          <span>User ID {user.id}</span>
-          <button onClick={() => handleModify(user.id)}>Modify</button>
-          <button onClick={() => handleActivate(user.id)} disabled={user.status === 'Active'}>
-            Activate
-          </button>
-          <button onClick={() => handleDeactivate(user.id)} disabled={user.status === 'Inactive'}>
-            Deactivate
-          </button>
+          <span>User ID: {user.id}</span> {/* Added missing colon for consistency */}
+          <div>
+            <button onClick={() => handleModify(user.id)} className="btn modify">Modify</button> {/* Added classes for button */}
+            <button onClick={() => handleActivate(user.id)} disabled={user.status === 'Active'} className="btn activate">Activate</button> {/* Added classes for button */}
+            <button onClick={() => handleDeactivate(user.id)} disabled={user.status === 'Inactive'} className="btn deactivate">Deactivate</button> {/* Added classes for button */}
+          </div>
         </div>
       ))}
     </div>

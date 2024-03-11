@@ -1,40 +1,71 @@
 /* AdminReviews.css */
 .admin-reviews-container {
-    padding: 20px;
-  }
-  
-  .search-container {
-    margin-bottom: 20px;
-  }
-  
-  .search-container input {
-    padding: 5px;
-    margin-right: 10px;
-  }
-  
-  .search-container button {
-    padding: 5px 10px;
-  }
-  
-  .caretakers-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .caretaker {
-    background: rgba(255, 255, 255, 0.5);
-    margin-bottom: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .open-reviews-button {
-    padding: 5px 10px;
-    background-color: #ffc107; /* Or any color that matches the 'Open Reviews' button */
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(248, 249, 250, 0.20); /* Light background with a touch of transparency */
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 100%;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.7); /* Slightly transparent for elegance */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+  font-size: 1rem;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Consistent cool blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s; /* Smooth transition for feedback */
+}
+
+.search-container button:hover {
+  background-color: #0056b3; /* A darker shade for hover effect */
+  transform: scale(1.05); /* Scale up for interaction */
+}
+
+.caretakers-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.caretaker {
+  background: rgba(255, 255, 255, 0.4); /* Increased transparency for stylistic consistency */
+  margin-bottom: 10px;
+  padding: 15px; /* Increased padding for better spacing */
+  border-radius: 5px; /* Rounded borders for modern look */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent subtle shadow */
+}
+
+.open-reviews-button {
+  padding: 8px 16px;
+  background-color: #17a2b8; /* Cool cyan for a fresh look */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Matching border-radius */
+  cursor: pointer;
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.open-reviews-button:hover {
+  background-color: #138496; /* Darken cyan on hover for visual feedback */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow on hover for depth */
+}
